@@ -88,6 +88,7 @@ html {
 }
 
 .menu-mobile nav ul{
+    display: block;
     text-align: right;
 }
 
@@ -149,11 +150,15 @@ header nav.menu-desktop a:hover{
 }
 
 header nav ul{
+    display: flex;
     list-style-type: none;
 }
 
 header nav.menu-desktop li{
-    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 20px;
+    display: inline;
     padding: 0 40px;
 }
 
@@ -187,11 +192,16 @@ section.topo-do-site .flex{
     margin: 40px 0;
 }
 
+.topo-do-site .img-topo-site{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
 .topo-do-site .img-topo-site img{
     padding: 0 4%;
-    left: 20%;
     position: relative;
-    width: 80%;
+    width: 100%;
     animation: flutuante 2s ease-in-out infinite alternate;
 }
 
@@ -600,6 +610,15 @@ height: 50px;
    .sobre .img-sobre img{
        width: 100%;
    }
+
+   section.sobre .flex {
+        display: flex;
+        gap: 0px;
+    }
+
+    section.sobre .txt-sobre{
+        min-width: 100%;
+    }
    
    /* PORTFÓLIO */
    
