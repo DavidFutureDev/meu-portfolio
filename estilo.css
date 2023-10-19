@@ -535,7 +535,7 @@ height: 50px;
 
 
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1280px){
 
     /* CLASSES GERAIS */
    
@@ -612,12 +612,13 @@ height: 50px;
    }
 
    section.sobre .flex {
+    padding: 5px;
         display: flex;
         gap: 0px;
     }
 
     section.sobre .txt-sobre{
-        padding: 30px;
+        padding: 10px;
         font-size: 16px;
         min-width: 100%;
     }
@@ -659,26 +660,4 @@ height: 50px;
    
    }
 
-   /* ESTILO PARA ADAPTAÇÃO DE TAMANHO EM DISPOSITIVO MÓVEL */
-
-   @media screen and (max-width: 1080px){
-    
-
-
-    /* FORMAÇÃO EDUCACIONAL */
-
-    section.formacao-educacional .formacao-box{
-        padding: 10px; 
-    }
-
-    /* SOBRE */
-
-    section.sobre .txt-sobre{
-        padding: 10px;
-    }
-
-
-    section.sobre .flex{
-        padding: 5px;
-    }
-  }
+ 
