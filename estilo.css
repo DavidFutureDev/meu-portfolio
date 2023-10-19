@@ -552,7 +552,7 @@ height: 50px;
    }
    
    h2.titulo{
-       font-size: 35px;
+       font-size: 30px;
        line-height: 42px;
    }
    
@@ -599,7 +599,7 @@ height: 50px;
    }
    
    .sobre .txt-sobre h2{
-       font-size: 34px;
+       font-size: 25px;
        line-height: 35px;
        text-align: center;
    }
@@ -617,7 +617,13 @@ height: 50px;
     }
 
     section.sobre .txt-sobre{
+        padding: 30px;
+        font-size: 16px;
         min-width: 100%;
+    }
+
+    section.sobre .txt-sobre:hover{
+        font-size: 16px;
     }
    
    /* PORTFÓLIO */
@@ -652,3 +658,27 @@ height: 50px;
    }
    
    }
+
+   /* ESTILO PARA ADAPTAÇÃO DE TAMANHO EM DISPOSITIVO MÓVEL */
+
+   @media screen and (max-width: 768px){
+    
+
+
+    /* FORMAÇÃO EDUCACIONAL */
+
+    section.formacao-educacional .formacao-box{
+        padding: 10px; 
+    }
+
+    /* SOBRE */
+
+    section.sobre .txt-sobre{
+        padding: 10px;
+    }
+
+
+    section.sobre .flex{
+        padding: 5px;
+    }
+  }
