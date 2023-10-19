@@ -1,0 +1,635 @@
+
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.back-grad{
+    background-image: linear-gradient(to bottom, #000,#3533CD);
+}
+
+.interface{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.flex{
+   display: flex; 
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #052DFF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #052DFF;
+}
+
+button:hover, form .enviar input:hover{
+    box-shadow: 0px 0px 8px #052ffff3;
+    transform: scale(1.05);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* ESTILO MENU MOBILE */
+
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .over-menu{
+    display: block;
+}
+
+
+.menu-mobile .button-fechar{
+    padding: 20px 6%;
+}
+
+.menu-mobile .button-fechar img{
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 6%;
+}
+
+
+.menu-mobile nav ul li a:hover{
+    background-color: #052DFF;
+    color: #000000;
+}
+
+.over-menu{
+    background-color: #0000009a;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+.logo img{
+    max-width: 40%;
+    height: auto;
+    display: block;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    font-size: 16px;
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/* ESTILO DO TOPO DO SITE */
+
+
+section.topo-do-site{
+    padding: 40px 4%; 
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #052DFF;
+    font-size: 62px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    padding: 0 4%;
+    left: 20%;
+    position: relative;
+    width: 80%;
+    animation: flutuante 2s ease-in-out infinite alternate;
+}
+
+.icon-topo-site img{
+    display: flex;
+    position: absolute;
+    max-width: 50px;
+    max-height: 50px;
+    width: 70%;
+}
+
+#arroba{
+    position: relative;
+    left: 40%;
+    top: ;
+}
+
+
+#internet {
+    left: 30%;
+    top: 40%;
+    transform: rotate(-15deg);
+}
+
+@keyframes flutuante{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO FORMAÇÃO EDUCACIONAL */ 
+
+section.formacao-educacional{
+    padding: 40px 4%;
+}
+
+
+section.formacao-educacional .flex{
+    gap: 60px;
+}
+
+.formacao-educacional .formacao-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: .2s;
+}
+
+.formacao-educacional .formacao-box:hover{
+    color: #000;
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #ffffff4d;
+}
+
+.icones{
+    width: 80px;
+    height:auto;
+}
+
+.formacao-educacional .formacao-box h3{
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+
+/* ESTILO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .img-sobre img{
+    width: 80%;
+}
+
+.sobre .txt-sobre{
+    font-size: 16px;
+    max-width: 50%;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: .3s;
+}
+
+.sobre .txt-sobre:hover{
+    font-weight: 600;
+    font-size: 17px;
+    color: #000;
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #ffffff4d;
+}
+
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 35px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #052DFF;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 18px 0;
+    text-align: justify;
+}
+
+.rede-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #052DFF;
+    cursor: pointer;
+    margin: 0 4px; 
+    transition: .2s;
+}
+
+.botao{
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.img-container {
+    perspective: 1000px;
+  }
+  
+  .img-original {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .img-container:hover .img-original {
+    transform: rotateY(180deg);
+  }
+/* ESTILO DO PORTFÓLIO */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #1915ff42;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+
+.img-portfolio{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-portfolio:hover{
+    background-position: 100% 100%;
+}
+
+
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000067;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.over:hover{
+    opacity: 1;
+}
+
+
+/* ESTILO DO FORMULÁRIO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form input, form textarea{
+    padding: 20px 15px;
+    width: 100%;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+form textarea{
+    max-height: 300px;
+    resize: none;
+}
+
+form .enviar{
+    margin-top: 18px;
+    text-align: center;
+}
+
+form .enviar input{
+    width: 120px;
+    background-color: #052DFF;
+    color: #fff;
+    transition: .2s;
+    font-weight: 650px;
+    cursor: pointer;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 40px 10px #1915ff42;
+}
+
+.logo-footer img{
+    max-width: 40%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #052DFF;
+}
+
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+footer .line-footer p{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+footer .rede-social{
+    display: flex;
+    align-items: end;
+}
+
+footer .btn-fim-pagina{
+    margin: 10px auto;
+    max-width: 250px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #052DFF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer .btn-fim-pagina a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .btn-fim-pagina:hover{
+    transform: scale(1.1);
+    background-color: #0520a5;
+}
+
+.button-abrir-menu{
+    display: none;
+}
+
+.line-footer.borda {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.email{
+width: 50px;
+height: 50px;
+}
+
+/* ESTILO PARA ADAPTAÇÃO DE TAMANHO DE TELA */
+
+
+
+@media screen and (max-width: 1200px){
+
+    /* CLASSES GERAIS */
+   
+   .button-abrir-menu{
+       display: block;
+   }
+   
+       .flex{
+           flex-direction: column;
+       }
+   
+   .topo-do-site .flex{
+       flex-direction: column-reverse;
+   }
+   
+   h2.titulo{
+       font-size: 35px;
+       line-height: 42px;
+   }
+   
+   
+       /* CABEÇALHO */
+       .menu-desktop, .btn-contato{
+           display: none;
+       }
+   
+       header{
+           padding: 5px;
+       }
+       /* TOPO DO SITE */
+   
+   section.topo-do-site{
+       padding: 5px 8%;
+   }
+   
+   .topo-do-site h1{
+       font-size: 30px;
+   }
+   
+   .topo-do-site .img-topo-site img{
+       width: 80%;
+       text-align: center;
+       left: -20%;
+   
+   }
+   
+   section.topo-do-site .flex{
+       gap: 10px;
+   }
+   
+   /* FORMAÇÃO EDUCACIONAL */
+   
+   section.formacao-educacional{
+       padding: 40px 8%;
+   }
+   
+   /* SOBRE */
+   
+   section.sobre{
+       padding: 80px 8%;
+   }
+   
+   .sobre .txt-sobre h2{
+       font-size: 34px;
+       line-height: 35px;
+       text-align: center;
+   }
+   
+   .rede-social{
+       text-align: center;
+   }
+   .sobre .img-sobre img{
+       width: 100%;
+   }
+   
+   /* PORTFÓLIO */
+   
+   section.portfolio{
+       padding: 80px 8%;
+   }
+   
+   .img-portfolio{
+       width: 100%;
+       max-width: 360px;
+       margin: 0 auto;
+   }
+   
+   section.portfolio .flex{
+       gap: 70px;
+   }
+   
+   
+   /* RODA PÉ */
+   
+   footer .flex{
+       gap: 20px;
+   }
+   
+   footer .logo-footer{
+       text-align: center;
+   }
+   
+   footer .rede-social{
+       margin: 0 auto;
+   }
+   
+   }
