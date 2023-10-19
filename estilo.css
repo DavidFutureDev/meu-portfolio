@@ -535,37 +535,37 @@ height: 50px;
 
 
 
-@media screen and (max-width: 1280px){
+@media  (max-width: 450px){
 
     /* CLASSES GERAIS */
    
-   .button-abrir-menu{
+    .button-abrir-menu{
        display: block;
-   }
+    }
    
-       .flex{
-           flex-direction: column;
-       }
+    .flex{
+        flex-direction: column;
+    }
    
-   .topo-do-site .flex{
+    .topo-do-site .flex{
        flex-direction: column-reverse;
-   }
+    }
    
-   h2.titulo{
+    h2.titulo{
        font-size: 30px;
        line-height: 42px;
-   }
+    }
    
    
        /* CABEÇALHO */
-       .menu-desktop, .btn-contato{
-           display: none;
-       }
-   
-       header{
-           padding: 5px;
-       }
-       /* TOPO DO SITE */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    header{
+        padding: 5px;
+    }
+    /* TOPO DO SITE */
    
    section.topo-do-site{
        padding: 5px 8%;
@@ -611,8 +611,9 @@ height: 50px;
        width: 100%;
    }
 
+   
    section.sobre .flex {
-    padding: 5px;
+        padding: 5px;
         display: flex;
         gap: 0px;
     }
