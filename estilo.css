@@ -599,7 +599,7 @@ height: 50px;
    }
    
    .sobre .txt-sobre h2{
-       font-size: 25px;
+       font-size: 30px;
        line-height: 35px;
        text-align: center;
    }
@@ -661,7 +661,7 @@ height: 50px;
 
    /* ESTILO PARA ADAPTAÇÃO DE TAMANHO EM DISPOSITIVO MÓVEL */
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 1080px){
     
 
 
