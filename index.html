@@ -8,42 +8,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--FIM CÓDIGO GOOGLE FONTS-->
-    <link rel="stylesheet" href="estilo.css">
-    <script src="menu-mobile.js" defer></script>
+    <link rel="stylesheet" href="estilo.css"> <!-- link para as folhas de estilo do site -->
+    <script src="menu-mobile.js" defer></script> <!--link para a JavaScript do Site -->
     <title>Portfólio Pessoal (CV Online) </title>
 </head>
 <body>
-    <header>
+    <header> <!--onde ficará o cabeçalho do site-->
         <div class="interface" id="inicio">
             <div class="logo">
                 <a href="#">
                     <img src="images/logo2.png" alt="logo do Portfólio Pessoal">
                 </a>
-            </div><!--logo-->
+            </div><!-- fim div para a logo-->
 
-            <nav class="menu-desktop">
+            <nav class="menu-desktop"> <!--menu de navegação do site -->
                 <ul>
                     <li><a href="#">Início</a></li>
                     <li><a href="#form-educ">Formação Educacional</a></li>
                     <li><a href="#portfolio">Projetos</a></li>
                     <li><a href="#sobre">Sobre mim</a></li>
                 </ul>
-            </nav>
+            </nav> <!-- fim do menu de navegação do site -->
 
-            <div class="btn-contato">
+            <div class="btn-contato"> <!--redirecionamento do botão contato para o formulário -->
                 <a href="#formulario">
                     <button>Contato</button>
                 </a>
-            </div><!--btn-contato--> 
-            <div class="button-abrir-menu" id="button-menu">
+            </div><!--fim div botão-contato--> 
+            <div class="button-abrir-menu" id="button-menu"> <!--div para botão de abrir o menu mobile -->
                 <img src="icons/icons-menu.png" alt="abrir menu">
-            </div><!-- button-abrir-menu -->
+            </div><!-- fim div botão-abrir-menu mobile -->
 
-            <div class="menu-mobile" id="menu-mobile">
+            <div class="menu-mobile" id="menu-mobile"> <!--botão de fechar menu mobile-->
                 <div class="button-fechar">
                     <img src="icons/icons-x.png" alt="botão fechar">
-                </div>
-                <nav>
+                </div> <!--fim da div botão de fechar menu mobile-->
+                <nav> <!-- menu mobile de navegação do site -->
                     <ul>
                         <li><a href="#">Início</a></li>
                         <li><a href="#form-educ">Formação Educacional</a></li>
@@ -51,62 +51,61 @@
                         <li><a href="#sobre">Sobre mim</a></li>
                         <li><a href="#formulario">Contato</a></li>
                     </ul>
-                </nav>
-            </div><!-- menu-mobile-->
+                </nav><!-- fim do menu mobile de navegação do site -->
+            </div><!-- fim div do menu-mobile-->
             <div class="over-menu" id="over-menu"></div>
-        </div><!--interface-->
-    </header>
+        </div><!-- fim div da interface-->
+    </header> <!--fim do cabeçalho do site-->
 
-    <main>
-        <section class="topo-do-site">
-            <div class="interface">
+    <main> <!-- onde ficará o conteúdo principal do site --> 
+        <section class="topo-do-site"> <!-- início da seção do topo do site-->
+            <div class="interface"> <!--div para a interface inicial-->
                 <div class="flex">
-                    <div class="txt-topo-site">
+                    <div class="txt-topo-site"><!--div para o texto do topo do site-->
                         <h1>SEJA BEM-VINDO AO MEU PORTFÓLIO<span>.</span></h1>
                         <p>Aqui você poderá saber mais sobre mim, meus interesses, meus hobbies, minha formação. Além disso, ver meus projetos pessoais, que em breve estarão disponíveis para visualização e totalmente disponibilizado no GitHub.</p>
 
-                        <div class="btn-contato">
+                        <div class="btn-contato"> <!--botão de contato -->
                             <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
-                        </div>
-                    </div><!-- txt-topo-site -->
+                        </div> <!--fim do botão de contato -->
+                    </div><!--fim da div para o texto do topo do site-->
 
-                    <div class="img-topo-site">
+                    <div class="img-topo-site"> <!--imagem do topo do site-->
                         <img src="images/foto_perfil.png" alt="pessoa do site">
-                        </div><!-- icon-topo-site -->
-                    </div><!-- img-topo-site -->
+                    </div><!--fim da imagem do topo do site-->
                 </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- topo-do-site -->
-    <div class="back-grad">   
-        <section class="formacao-educacional" id="form-educ">
-            <div class="interface">
+            </div><!--fim da div para a interface inicial-->
+        </section><!-- fim do início da seção do topo do site-->
+    <div class="back-grad"> <!--div para aplicar gradiente linear no fundo do site apenas em duas sessões-->   
+        <section class="formacao-educacional" id="form-educ"> <!--seção sobre a formação educacional-->
+            <div class="interface"><!-- div para a interface da seção de formação educacional-->
                 <h2 class="titulo">FORMAÇÃO <span>EDUCACIONAL.</span></h2>
-                <div class="flex">
-                    <div class="formacao-box">
+                <div class="flex"><!-- uma div para tornar essas box abaixo flexíveis -->
+                    <div class="formacao-box"> <!--uma div para a box do ensino médio -->
                         <img class="icones" src="icons/icon-educacao2.png" alt="ícone educacional">
                         <h3>Ensino Médio</h3>
                         <p>Completei meu Ensino Médio no Colégio Estadual Professor Teobaldo Leonardo Kletemberg localizado no bairro Sitio Cercado em Curitiba PR.</p>
-                    </div><!-- formacao-box -->
-                    <div class="formacao-box">
+                    </div><!--fim da div para a box do ensino médio -->
+                    <div class="formacao-box"> <!--uma div para a box da graduação-->
                         <img class="icones" src="icons/icon-educacao.png" alt="ícone educacional">
                         <h3>Graduação</h3>
                         <p>Atualmente realizando o Curso Superior de Tecnologia (CST) Análise e Desenvolvimento de Sistemas pela universidade Uninter. </p>
-                    </div><!-- formacao-box -->
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- formacao educacional -->
+                    </div><!--fim da div para a box da graduação-->
+                </div><!-- fim da div flex -->
+            </div><!-- fim da div para a interface da seção de formação educacional-->
+        </section><!-- fim da seção sobre a formação educacional-->
 
-        <section class="sobre" id="sobre">
-            <div class="interface" id="interface">
-                <div class="flex">
-                    <div class="img-sobre">
+        <section class="sobre" id="sobre"> <!-- início da seção sobre mim -->
+            <div class="interface" id="interface"> <!-- interface da seção sobre mim -->
+                <div class="flex"> <!-- para tornar as box dentro da interface flexíveis-->
+                    <div class="img-sobre"> <!--uma imagem sobre mim -->
                         <div class="img-container">
                             <img class="img-original" src="images/sobre_mim.png" alt="foto sobre mim">
                         </div>
-                    </div><!-- img-sobre -->
-                    <div class="txt-sobre">
+                    </div><!-- fim da imagem sobre mim -->
+                    <div class="txt-sobre"><!--início do texto sobre mim -->
                         <h2>MUITO PRAZER, <span>SOU DAVID SANTOS.</span></h2>
                         <p>Olá! Meu nome é David Santos e gostaria de compartilhar um pouco mais sobre mim, para que você possa me conhecer melhor.</p>
 
@@ -115,23 +114,23 @@
                             <p>Sempre começo meu dia com uma boa xícara de café, apreciando o aroma e o sabor enquanto acarício meu gato , penso nas tarefas do dia e imagino-me quando farei uma tão sonhada viagem internacional para conhecer novos lugares e culturas diferentes.</p>
                             
                             <p>E claro, não poderia deixar de falar que sou um amante da tecnologia e entusiasta no mundo da programação, apesar de demorar um pouco para descobrir meu gosto pela área, hoje me empenho a destrinchar este mundo, sempre buscando conhecimento para aprimorar-me e desenvolver minhas habilidades, dando ênfase na área front-end e desenvolvimento web, que é onde posso despertar a minha versão criativa.</p>
-                        <div class="rede-social">
+                        <div class="rede-social"><!-- os links redirecionadores para minhas redes sociais -->
                             <a href="https://www.instagram.com/daviid.santt/" target="_blank"><button><img class="botao" src="icons/icons-instagram.svg" alt="instagram"></button></a>
                             <a href="https://www.linkedin.com/in/david-alexandr99" target="_blank"><button><img class="botao" src="icons/icons-linkedin.svg" alt="linkedin"></button></a>
                             <a href="https://github.com/DavidFutureDev" target="_blank"><button><img class="botao" src="icons/icons-github.svg" alt="github"></button></a>
-                        </div><!-- rede-social -->
-    </div>                     
-                    </div><!-- txt-sobre -->
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- sobre -->
+                        </div><!-- fim dos links redirecionadores para minhas redes sociais -->
+    </div> <!--fim da div para aplicar gradiente linear no fundo do site apenas em duas sessões-->                        
+                    </div><!--fim do texto sobre mim -->
+                </div><!-- fim da div para tornar as box dentro da interface flexíveis-->
+            </div><!-- fim da interface da seção sobre mim -->
+        </section><!-- fim da seção sobre mim -->
 
-        <section class="portfolio" id="portfolio">
-            <div class="interface">
+        <section class="portfolio" id="portfolio"> <!--início da seção do meu portfólio-->
+            <div class="interface"><!--interface da seção do meu portfólio-->
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-                <div class="flex">
+                <div class="flex"><!--div flex para tornar as box dentro da interface flexíveis -->
                     <div class="img-portfolio" style="background-image: url(images/project1.png);">
-                        <div class="over">Projeto 1</div>
+                        <div class="over"> <a href="https://meuportfoliods.netlify.app" target="_blank" class="over">Projeto 1</a></div>
                     </div>
                     <div class="img-portfolio" style="background-image: url(images/project2.png);">
                         <div class="over">Projeto 2</div>
@@ -139,14 +138,14 @@
                     <div class="img-portfolio" style="background-image: url(images/project3.png);">
                         <div class="over">Projeto 3</div>
                     </div>
-                </div><!-- flex -->
-            </div><!-- interface -->
-        </section><!-- portfolio -->
+                </div><!--fim da div flex para tornar as box dentro da interface flexíveis -->
+            </div><!-- fim da interface da seção do meu portfólio-->
+        </section><!--fim da seção do meu portfólio-->
 
-        <section class="formulario" id="formulario">
-            <div class="interface">
+        <section class="formulario" id="formulario"><!--início da seção do meu formulário-->
+            <div class="interface"><!-- interface da seção do meu formulário-->
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-                <form action="">
+                <form action=""> <!-- início do formulário-->
                     <div>
                         <input type="text" name="" class="box-form" placeholder="Seu nome completo:" required>
                     </div>
@@ -160,34 +159,33 @@
                         <textarea name="" class="box-form" placeholder="Sua mensagem" required></textarea>
                     </div>
                     <div class="enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
-            </div><!-- interface -->
-        </section><!-- formulario -->
-    </main>
-    <footer>
-        <div class="interface">
-            <div class="line-footer">
+                </form> <!-- fim do formulário-->
+            </div><!-- fim da interface da seção do meu formulário-->
+        </section><!--fim da seção do meu formulário-->
+    </main><!-- fim de onde ficará o conteúdo principal do site --> 
+    <footer> <!-- início do meu roda pé-->
+        <div class="interface"><!--interface do meu roda pé-->
+            <div class="line-footer"><!--campo final do site -->
                 <div class="flex">
-                    <div class="logo-footer">
+                    <div class="logo-footer"><!-- imagem da logo do site -->
                         <img src="images/logo2.png" alt="logo do site">
-                    </div><!-- logo-footer -->
-                    <div class="rede-social">
+                    </div><!-- fim da imagem da logo do site -->
+                    <div class="rede-social"><!--links redirecionadores para minhas redes sociais-->
                         <a href="https://www.instagram.com/daviid.santt/" target="_blank"><button><img class="botao" src="icons/icons-instagram.svg" alt="instagram"></button></a>
                         <a href="https://www.linkedin.com/in/david-alexandr99" target="_blank"><button><img class="botao" src="icons/icons-linkedin.svg" alt="linkedin"></button></a>
                         <a href="https://github.com/DavidFutureDev" target="_blank"><button><img class="botao" src="icons/icons-github.svg" alt="github"></button></a>
-                    </div><!-- rede-social -->
-                </div> 
+                    </div><!-- fim dos links redirecionadores para minhas redes sociais-->
+                </div> <!-- botão para voltar ao topo da pagína-->
                     <div class="btn-fim-pagina">
                         <a href="#inicio" class="fim-da-pagina">Topo da página</a>
-                    </div>
-            </div><!-- line-footer -->
-            <div class="line-footer borda">
-                <p class="contact"><img class="email" src="icons/icons-email.svg" alt="email"><a href="mailto:david-alexandre98@hotmail.com">david-alexandre98@hotmail.com</a></p>
-                <p class="contact">Ou me contate via Whatsapp <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5541995870187" target="_blank"><img src="icons/icons-whatsapp.svg" alt="whatsapp"></a></p>
-            </div><!-- line-footer -->
-        </div><!-- inteface -->
-    </footer>
-
+                    </div> <!-- fim do botão para voltar ao topo da pagína-->
+            </div><!-- fim do campo do site -->
+            <div class="line-footer borda"> <!-- para itens abaixo da borda do fim do site -->
+                <p class="contact"><img class="email" src="icons/icons-email.svg" alt="email"><a href="mailto:david-alexandre98@hotmail.com">david-alexandre98@hotmail.com</a></p> <!-- meu contato e-mail-->
+                <p class="contact">Ou me contate via Whatsapp <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5541995870187" target="_blank"><img src="icons/icons-whatsapp.svg" alt="whatsapp"></a></p> <!-- meu contato whatsapp -->
+            </div><!-- fim dos itens abaixo da borda do fim do site --> 
+        </div><!--fim da interface do meu roda pé-->
+    </footer><!-- fim do meu roda pé-->
 </body>
 </html>
 

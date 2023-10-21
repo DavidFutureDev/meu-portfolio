@@ -59,7 +59,9 @@ html {
 /* ESTILO MENU MOBILE */
 
 .menu-mobile{
-    background-color: #000000;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 5px 5px 30px #fff;
+    background-color: #ffffff;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -83,8 +85,9 @@ html {
     padding: 20px 6%;
 }
 
-.menu-mobile .button-fechar img{
-
+.menu-mobile .button-fechar img:hover{
+    transform: scale(1.3);
+    transition: .2s;
 }
 
 .menu-mobile nav ul{
@@ -94,7 +97,7 @@ html {
 
 .menu-mobile nav ul li a{
     display: block;
-    color: #fff;
+    color: #000000;
     font-size: 20px;
     font-weight: 300;
     padding: 20px 6%;
@@ -102,6 +105,8 @@ html {
 
 
 .menu-mobile nav ul li a:hover{
+    font-weight: 500;
+    transform: scale(1.1);
     background-color: #052DFF;
     color: #000000;
 }
@@ -116,6 +121,7 @@ html {
     z-index: 88888;
     display: none;
 }
+
 
 
 /* ESTILO DO CABEÇALHO */
@@ -395,6 +401,7 @@ section.portfolio .flex{
     justify-content: center;
     color: #fff;
     font-size: 26px;
+    text-decoration: none;
     font-weight: 600;
     opacity: 0;
     transition: .5s;
