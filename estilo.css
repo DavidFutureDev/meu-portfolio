@@ -51,6 +51,11 @@ button:hover, form .enviar input:hover{
     transform: scale(1.05);
 }
 
+button{
+    position: relative;
+    z-index: 9999;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -104,6 +109,15 @@ html {
       translate: 0 0;
     }
 }  
+
+
+#particles-js {
+    display: inline;
+    position: absolute;
+    height: 100%;
+    background: #00000000;
+    z-index: 1;
+}
 
 /* ESTILO MENU MOBILE */
 
@@ -182,7 +196,8 @@ html {
 }
 
 header{
-    padding: 40px 4%;
+    padding: 10px 4%;
+    z-index: ;
 }
 
 header > .interface{
@@ -302,7 +317,8 @@ section.formacao-educacional .flex{
 }
 
 .formacao-educacional .formacao-box{
-    color: #ffffff;
+    background-color: #fff;
+    color: #000000;
     padding: 40px;
     border-radius: 20px;
     margin-top: 50px;
@@ -310,8 +326,8 @@ section.formacao-educacional .flex{
 }
 
 .formacao-educacional .formacao-box:hover{
-    color: #000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #ffffff15;
     transform: scale(1.05);
     box-shadow: 0 0 18px #ffffff4d;
 }
@@ -330,7 +346,7 @@ section.formacao-educacional .flex{
 /* ESTILO SOBRE */
 
 section.sobre{
-    padding: 80px 4%;
+    padding: 30px 4%;
 }
 
 section.sobre .flex{
@@ -343,9 +359,10 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
+    background-color: #fff;
     font-size: 16px;
     max-width: 50%;
-    color: #fff;
+    color: #000000;
     padding: 40px;
     border-radius: 20px;
     margin-top: 50px;
@@ -355,8 +372,8 @@ section.sobre .flex{
 .sobre .txt-sobre:hover{
     font-weight: 600;
     font-size: 17px;
-    color: #000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #ffffff1c;
     transform: scale(1.05);
     box-shadow: 0 0 18px #ffffff4d;
 }
